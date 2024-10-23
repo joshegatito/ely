@@ -1,0 +1,147 @@
+/* Fuente personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body {
+    background-color: #0c0c0c;
+    color: #fff;
+    font-family: 'Creepster', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: calc(10px + 2vmin);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10px; /* Espacio interior para móviles */
+}
+
+header h1 {
+    font-size: calc(20px + 4vmin);
+    color: #ff6347;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 20px 0;
+}
+
+.message {
+    font-size: calc(14px + 2vmin); 
+    margin: 20px 0;
+}
+
+#hiddenMessage {
+    font-size: calc(14px + 2vmin); 
+    color: #ff6347;
+}
+
+img.decorada {
+    width: 90%;
+    max-width: 698px;
+    height: auto;
+    border: 5px solid #ff6347;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    width: 90%;
+    max-width: 698px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+}
+
+.overlay .text {
+    font-size: calc(14px + 2vmin); 
+    color: #ff6347;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.roses {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 2; 
+}
+
+.rose {
+    width: calc(70px + 2vmin); 
+    height: calc(70px + 2vmin); 
+    background: url('rose_black.png') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+}
+
+.top-left {
+    top: -15px;
+    left: -15px;
+}
+
+.top-right {
+    top: -15px;
+    right: -15px;
+}
+
+.bottom-left {
+    bottom: -15px;
+    left: -15px;
+}
+
+.bottom-right {
+    bottom: -15px;
+    right: -15px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: calc(12px + 1vmin); 
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #000000;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ffa07a;
+}
+
+footer {
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: calc(10px + 1vmin); 
+}
+
+footer a {
+    color: #ffa07a;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
