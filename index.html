@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>💀 Romance de Halloween 🎃</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -37,5 +38,23 @@
         </footer>
     </div>
     <script src="script.js"></script>
+    <script>
+        // Llamar a la función para crear murciélagos
+        window.onload = createBats;
+
+        function createBats() {
+            const numberOfBats = 5; // Número de murciélagos que deseas crear
+            for (let i = 0; i < numberOfBats; i++) {
+                const bat = document.createElement('div');
+                bat.className = 'bat';
+                // Establece posiciones aleatorias
+                bat.style.top = Math.random() * 100 + 'vh';
+                bat.style.left = Math.random() * 100 + 'vw';
+                // Duración de la animación aleatoria
+                bat.style.animationDuration = (5 + Math.random() * 5) + 's';
+                document.body.appendChild(bat);
+            }
+        }
+    </script>
 </body>
 </html>

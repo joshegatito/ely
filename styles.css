@@ -28,7 +28,7 @@ header h1 {
 }
 
 .message {
-    font-size: calc(14px + 2vmin); 
+    font-size: calc(14px + 2vmin);
     margin: 20px 0;
 }
 
@@ -144,4 +144,28 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Estilos para los murciélagos */
+.bat {
+    position: fixed;
+    width: calc(100px + 2vmin);
+    height: calc(100px + 2vmin);
+    background-image: url('bat.png'); /* Asegúrate de tener una imagen de murciélago */
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fly 10s linear infinite;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); /* Efecto de sombra blanca */
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(-10%, 10px) scale(1) rotate(0deg);
+    }
+    50% {
+        transform: translate(110vw, 100px) scale(1.2) rotate(45deg);
+    }
+    100% {
+        transform: translate(-10%, 200px) scale(1) rotate(0deg);
+    }
 }
